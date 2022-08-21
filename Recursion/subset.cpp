@@ -18,6 +18,8 @@ using namespace std;
 
 void printSubsequence(int idx, vector<int> &ds, int arr[], int n)
 {
+	if(n == 0)
+		return {};
 	if(idx >= n)
 	{
 		for(auto it: ds) {
@@ -49,5 +51,5 @@ int main()
 	return 0;
 }
 
-// Time Complexity: O(2^n)
-// space Complexity: O(2^n)
+// Time Complexity: O(2^n x n)
+// space Complexity: O(n)
